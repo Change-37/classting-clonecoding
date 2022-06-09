@@ -1,0 +1,93 @@
+body {
+    background-color: white;
+    line-height: 1;
+    font-family: var(--fonts-noto);
+    word-wrap: break-word;
+    word-break: keep-all;
+    display: block;
+    box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1{
+    color: hsl(0, 0%, 13%);
+    font-size: 1.125rem;
+    line-height: 130%;
+}
+h2{
+    color: hsl(0, 0%, 13%);
+    font-size: 1rem;
+    line-height: 150%;
+}
+h3{
+    color: hsl(0, 0%, 46%);
+    font-size: 0.875rem;
+    line-height: 150%;
+}
+
+.main--screen{
+    max-width: 960px;
+    padding: 1.5rem 1.5rem 0;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "main main main main main main main right right right right right";
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5rem;
+    vertical-align: baseline;
+}
+
+.main--container{
+    margin-bottom: 80px;
+    grid-area: main / main / main / main;
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 1rem;
+}
+
+.a--container{
+    margin: 0;
+    height: 6.25rem;
+    background-color: hsl(0, 0%, 96%);
+    border-style: solid;
+    border-color: hsl(0, 0%, 88%);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.class--container{
+    
+    border-style: solid;
+    border-color: hsl(0, 0%, 88%);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.school--container{
+    padding-top: 1rem;
+    background-color: rgb(246, 249, 247);
+    border-style: solid;
+    border-color: hsl(0, 0%, 88%);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.school--incontainer{
+    padding-top: 1.5rem;
+}
+
+.school--container--info{
+    padding: 1.25rem 1.5rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.right--container{
+    position: sticky;
+    display: grid;
+    gap: 1.5rem;
+    grid-area: right / right / right / right;
+    grid-auto-rows: min-content;
+}
